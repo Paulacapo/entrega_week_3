@@ -1,4 +1,28 @@
-/* Estilo de escritura principal*/
+
+*  img{
+    display: block;
+    max-width: 100%;
+     width: 100%;
+     height: auto; 
+    
+  }
+
+  
+  
+
+  /* Estilo de escritura principal*/
+
+.header {
+    height: 10%;
+  }
+  .header .contenedor{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo a {
+    text-decoration: none;
+  }
+  
 
 body {
     font-family: 'Calibri', sans-serif;
@@ -7,36 +31,73 @@ body {
 }
 
 header {
-    background-color: #888;
-    color: #fff;
+    background-color: #ffffff;
+    color: #333;
     padding: 10px;
-    text-align: center;
 }
 
 nav {
-    margin-top: 40px;
+    margin-top: 10px;
+    text-align: center
 }
 
 nav ul {
     list-style-type: none;
     margin: 10;
     padding: 0;
+    text-align: center
 }
 
 nav li {
     display: inline;
     margin-right: 50px;
+    text-align: center
 }
 
 section { 
-    margin: 50px;
+    margin: 70px;
+}
+
+article { 
+    margin: 70px;
+    text-align: center;
 }
 
 footer {
-    background-color: #888;
+    background-color: #333;
     color: #fff;
-    padding: 14px;
+    padding: 20px;
     text-align: center;
+}
+
+/* Estilo de escritura del Banner */ 
+
+.banner{
+    margin-top: -50px;
+    position: relative;
+    z-index: -1000;
+    font-size: 450%;
+    height: 130vh;
+    
+}
+  
+  .banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+  
+  .banner__txt {
+    font-size: 60%;
+    display: none;
+}
+  
+  .banner__titulo {
+      font-size: 70%;
 }
 
 
@@ -66,9 +127,4 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Estilo de fotografía */
 
-.container {
-    text-align: center;
-   
-}
